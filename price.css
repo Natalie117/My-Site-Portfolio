@@ -1,0 +1,287 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    height: 100%;
+}
+
+img {
+    display: block;
+}
+
+/*header*/
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 73px;
+    border-bottom: 1px solid #e5e9f2;
+}
+
+.header-container {
+    width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 40px;
+}
+
+.nav {
+    font-weight: bold;
+    font-size: 14px;
+    color: #18191F;
+    margin-top: -4px;
+}
+
+.nav-link {
+    margin-right: 32px;
+    color: #18191F;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #8C30F5;
+}
+
+.appstore {
+    margin-left: auto;
+    display: flex;
+}
+
+.appstore-item {
+    margin: 5px 0 5px 12px;
+}
+
+.appstore-item:hover {
+    opacity: 0.5;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1100px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+h2{
+    margin: 5px;
+}
+
+table {
+    width: 800px;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+
+thead th:nth-child(1) {
+    background-color: #9e9ac2;
+    color: white;
+    font-size: 14px;
+}
+thead th:nth-child(2) {
+    background-color: #8681b3;
+    color: white;
+    font-size: 14px;
+}
+thead th:nth-child(3) {
+    background-color: #6963a1;
+    color: white;
+    font-size: 14px;
+}
+thead th:nth-child(4) {
+    background-color: #4f4891;
+    color: white;
+    font-size: 14px;
+}
+thead th:nth-child(5) {
+    background-color: #3d3585;
+    color: white;
+    font-size: 14px;
+}
+
+tr:nth-child(5){
+    color: #000082; 
+    font-weight: bold;
+}
+td:nth-child(1) {
+    background-color: rgba(211, 211, 211, 0.2);
+    text-align: left;
+}
+td:nth-child(3),td:nth-child(5) {
+    background-color: rgba(211, 211, 211, 0.2);
+}
+tr:nth-child(even) {
+    background-color: #f3f3f3; 
+}
+
+tr:nth-child(odd) {
+    background-color: #ffff;  
+}
+tr:nth-child(even):hover{
+    background-color: #d4d4d47c;
+}
+tr:nth-child(1):hover,tr:nth-child(3):hover,tr:nth-child(5):hover{
+    background-color: #d4d4d47c;
+}
+button {
+    padding: 10px 20px;
+    background-color: #ececec;
+    border: 1px solid #c5c5c5;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d4d4d4;
+}
+
+/*footer*/
+
+.footer {
+    display: flex;
+    align-items: center;
+    height: 72px;
+    background: #0B0D17;
+    color: #D9D8E1;
+}
+
+.footer-container {
+    width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-socials img{
+	display: flex;
+    display: inline-block;
+    margin: 5px;
+}
+
+.footer-socials-item{
+	margin-left: 14px;
+}
+
+.footer-socials-item:hover{
+	opacity: 0.5;
+}
+@media (max-width: 600px) {
+  .header-container,
+  .footer-container {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .header-container {
+    gap: 10px;
+  }
+
+  .logo {
+    margin-right: 0;
+  }
+
+  .nav {
+    font-size: 12px;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .nav-link {
+    margin-right: 12px;
+    font-size: 12px;
+  }
+
+  .appstore {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .appstore-item {
+    margin: 5px 8px;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  .main-container {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  th, td {
+    padding: 10px 5px;
+  }
+
+  .footer {
+    height: auto;
+    padding: 15px 0;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-socials {
+    order: 2;
+  }
+}
+
+
+
